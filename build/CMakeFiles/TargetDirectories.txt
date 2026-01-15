@@ -1,0 +1,12 @@
+/root/raytracedicom_updated1011/build/CMakeFiles/raytracedicom_lib.dir
+/root/raytracedicom_updated1011/build/CMakeFiles/raytracedicom_test.dir
+/root/raytracedicom_updated1011/build/CMakeFiles/cpb_debug_test.dir
+/root/raytracedicom_updated1011/build/CMakeFiles/texture_coordinate_test.dir
+/root/raytracedicom_updated1011/build/CMakeFiles/simple_texture_debug.dir
+/root/raytracedicom_updated1011/build/CMakeFiles/cpb_ray_tracing_integration.dir
+/root/raytracedicom_updated1011/build/CMakeFiles/wrapper_integration_test.dir
+/root/raytracedicom_updated1011/build/CMakeFiles/complete_dose_debug.dir
+/root/raytracedicom_updated1011/build/CMakeFiles/simple_ray_mapping_test.dir
+/root/raytracedicom_updated1011/build/CMakeFiles/dose_distribution_analysis.dir
+/root/raytracedicom_updated1011/build/CMakeFiles/edit_cache.dir
+/root/raytracedicom_updated1011/build/CMakeFiles/rebuild_cache.dir

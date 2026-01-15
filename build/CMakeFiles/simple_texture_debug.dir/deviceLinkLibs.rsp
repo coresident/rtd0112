@@ -1,0 +1,1 @@
+  -L"/usr/local/cuda/targets/x86_64-linux/lib"  lib/libraytracedicom_lib.a /usr/local/cuda/lib64/libcudart_static.a -lpthread -ldl  -lcudadevrt -lcudart_static -lrt 

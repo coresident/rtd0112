@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/complete_dose_debug.dir/src/tests/complete_dose_debug.cu.o CMakeFiles/complete_dose_debug.dir/cmake_device_link.o -o bin/complete_dose_debug   -L/usr/local/cuda/targets/x86_64-linux/lib  lib/libraytracedicom_lib.a /usr/local/cuda/lib64/libcudart_static.a -lpthread -ldl /usr/lib/x86_64-linux-gnu/librt.so -lcudadevrt -lcudart_static -lrt -lpthread -ldl 

@@ -1,0 +1,160 @@
+[  2%] Building CUDA object CMakeFiles/raytracedicom_lib.dir/src/algorithms/transfer_param_helper.cu.o
+[  4%] Building CUDA object CMakeFiles/raytracedicom_lib.dir/src/core/raytracedicom_wrapper.cu.o
+In file included from /root/raytracedicom_updated1011/src/core/raytracedicom_wrapper.cu:11:
+/root/raytracedicom_updated1011/include/../include/utils/debug_tools.h:65: warning: "CONSTRUCTOR_TIMER_END" redefined
+   65 |     #define CONSTRUCTOR_TIMER_END(name) printf("[TIMING] %s constructor execution completed (GPU)\n", name)
+      | 
+In file included from /root/raytracedicom_updated1011/include/../include/core/ray_tracing.h:13,
+                 from /root/raytracedicom_updated1011/src/core/raytracedicom_wrapper.cu:2:
+/root/raytracedicom_updated1011/include/../include/core/common.cuh:129: note: this is the location of the previous definition
+  129 |     #define CONSTRUCTOR_TIMER_END(name) printf("Device code: HERE %s constructor is running\n", name)
+      | 
+In file included from /root/raytracedicom_updated1011/src/core/raytracedicom_wrapper.cu:11:
+/root/raytracedicom_updated1011/include/../include/utils/debug_tools.h:65: warning: "CONSTRUCTOR_TIMER_END" redefined
+   65 |     #define CONSTRUCTOR_TIMER_END(name) printf("[TIMING] %s constructor execution completed (GPU)\n", name)
+      | 
+In file included from /root/raytracedicom_updated1011/include/../include/core/ray_tracing.h:13,
+                 from /root/raytracedicom_updated1011/src/core/raytracedicom_wrapper.cu:2:
+/root/raytracedicom_updated1011/include/../include/core/common.cuh:129: note: this is the location of the previous definition
+  129 |     #define CONSTRUCTOR_TIMER_END(name) printf("Device code: HERE %s constructor is running\n", name)
+      | 
+/root/raytracedicom_updated1011/src/core/raytracedicom_wrapper.cu: In function ‘void subsecondWrapper(const float*, const int3&, const float3&, const float3&, float*, const int3&, const float3&, const float3&, const RTDBeamSettings*, size_t, const RTDEnergyStruct*, int, bool, bool)’:
+/root/raytracedicom_updated1011/src/core/raytracedicom_wrapper.cu:430:19: warning: comparison of integer expressions of different signedness: ‘int’ and ‘size_t’ {aka ‘long unsigned int’} [-Wsign-compare]
+  430 |             for (int i = 0; i < raySize; i++) {
+      |                 ~~^~~~~~~~~
+/root/raytracedicom_updated1011/src/core/raytracedicom_wrapper.cu:505:32: warning: comparison of integer expressions of different signedness: ‘int’ and ‘const unsigned int’ [-Wsign-compare]
+  505 |             if (beamFirstCalculatedPassive >= beam.steps) {
+      |             ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+/root/raytracedicom_updated1011/src/core/raytracedicom_wrapper.cu:530:84: warning: comparison of integer expressions of different signedness: ‘int’ and ‘const unsigned int’ [-Wsign-compare]
+  530 |             if (beamFirstCalculatedPassive < beamFirstInside || beamFirstCalculatedPassive > beam.steps || beamFirstCalculatedPassive < 0) {
+      |                                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+[  6%] Linking CXX static library lib/libraytracedicom_lib.a
+[ 40%] Built target raytracedicom_lib
+[ 44%] Linking CUDA device code CMakeFiles/simple_texture_debug.dir/cmake_device_link.o
+[ 44%] Building CUDA object CMakeFiles/wrapper_integration_test.dir/src/tests/wrapper_integration_test.cu.o
+[ 46%] Building CUDA object CMakeFiles/raytracedicom_test.dir/src/tests/complete_dose_debug.cu.o
+[ 48%] Linking CUDA device code CMakeFiles/texture_coordinate_test.dir/cmake_device_link.o
+[ 51%] Linking CUDA device code CMakeFiles/simple_ray_mapping_test.dir/cmake_device_link.o
+[ 53%] Building CUDA object CMakeFiles/complete_dose_debug.dir/src/tests/complete_dose_debug.cu.o
+[ 55%] Building CUDA object CMakeFiles/cpb_ray_tracing_integration.dir/src/tests/cpb_ray_tracing_integration.cu.o
+[ 57%] Building CUDA object CMakeFiles/cpb_debug_test.dir/src/tests/cpb_convolution_debug.cu.o
+[ 60%] Building CUDA object CMakeFiles/dose_distribution_analysis.dir/src/tests/dose_distribution_analysis.cu.o
+[ 62%] Linking CXX executable bin/simple_texture_debug
+[ 64%] Linking CXX executable bin/texture_coordinate_test
+[ 66%] Linking CXX executable bin/simple_ray_mapping_test
+In file included from /root/raytracedicom_updated1011/src/tests/wrapper_integration_test.cu:9:
+/root/raytracedicom_updated1011/include/../include/utils/debug_tools.h:65: warning: "CONSTRUCTOR_TIMER_END" redefined
+   65 |     #define CONSTRUCTOR_TIMER_END(name) printf("[TIMING] %s constructor execution completed (GPU)\n", name)
+      | 
+In file included from /root/raytracedicom_updated1011/src/tests/wrapper_integration_test.cu:7:
+/root/raytracedicom_updated1011/include/../include/core/common.cuh:129: note: this is the location of the previous definition
+  129 |     #define CONSTRUCTOR_TIMER_END(name) printf("Device code: HERE %s constructor is running\n", name)
+      | 
+In file included from /root/raytracedicom_updated1011/src/tests/cpb_ray_tracing_integration.cu:22:
+/root/raytracedicom_updated1011/include/../include/utils/debug_tools.h:65: warning: "CONSTRUCTOR_TIMER_END" redefined
+   65 |     #define CONSTRUCTOR_TIMER_END(name) printf("[TIMING] %s constructor execution completed (GPU)\n", name)
+      | 
+In file included from /root/raytracedicom_updated1011/src/tests/cpb_ray_tracing_integration.cu:18:
+/root/raytracedicom_updated1011/include/../include/core/common.cuh:129: note: this is the location of the previous definition
+  129 |     #define CONSTRUCTOR_TIMER_END(name) printf("Device code: HERE %s constructor is running\n", name)
+      | 
+[ 68%] Built target simple_texture_debug
+/usr/bin/ld: CMakeFiles/simple_ray_mapping_test.dir/src/tests/simple_ray_mapping_test.cu.o: in function `main':
+tmpxft_0000c44f_00000000-6_simple_ray_mapping_test.cudafe1.cpp:(.text+0x481): undefined reference to `performCPBToRayWeightMapping(float*, vec3i, vec3f, vec3f, float*, vec3i, vec3f, vec3f, vec3f, vec3f, float, float)'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/simple_ray_mapping_test.dir/build.make:124: bin/simple_ray_mapping_test] Error 1
+make[1]: *** [CMakeFiles/Makefile2:309: CMakeFiles/simple_ray_mapping_test.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[ 71%] Built target texture_coordinate_test
+In file included from /root/raytracedicom_updated1011/src/tests/wrapper_integration_test.cu:9:
+/root/raytracedicom_updated1011/include/../include/utils/debug_tools.h:65: warning: "CONSTRUCTOR_TIMER_END" redefined
+   65 |     #define CONSTRUCTOR_TIMER_END(name) printf("[TIMING] %s constructor execution completed (GPU)\n", name)
+      | 
+In file included from /root/raytracedicom_updated1011/src/tests/wrapper_integration_test.cu:7:
+/root/raytracedicom_updated1011/include/../include/core/common.cuh:129: note: this is the location of the previous definition
+  129 |     #define CONSTRUCTOR_TIMER_END(name) printf("Device code: HERE %s constructor is running\n", name)
+      | 
+In file included from /root/raytracedicom_updated1011/src/tests/cpb_ray_tracing_integration.cu:22:
+/root/raytracedicom_updated1011/include/../include/utils/debug_tools.h:65: warning: "CONSTRUCTOR_TIMER_END" redefined
+   65 |     #define CONSTRUCTOR_TIMER_END(name) printf("[TIMING] %s constructor execution completed (GPU)\n", name)
+      | 
+In file included from /root/raytracedicom_updated1011/src/tests/cpb_ray_tracing_integration.cu:18:
+/root/raytracedicom_updated1011/include/../include/core/common.cuh:129: note: this is the location of the previous definition
+  129 |     #define CONSTRUCTOR_TIMER_END(name) printf("Device code: HERE %s constructor is running\n", name)
+      | 
+/root/raytracedicom_updated1011/src/tests/complete_dose_debug.cu(644): error: no suitable conversion function from "vec3f" to "int" exists
+          make_vec3f(0.0f, 0.0f, 1.0f),
+          ^
+
+/root/raytracedicom_updated1011/src/tests/complete_dose_debug.cu(650): error: too few arguments in function call
+      );
+      ^
+
+2 errors detected in the compilation of "/root/raytracedicom_updated1011/src/tests/complete_dose_debug.cu".
+/root/raytracedicom_updated1011/src/tests/complete_dose_debug.cu(644): error: no suitable conversion function from "vec3f" to "int" exists
+          make_vec3f(0.0f, 0.0f, 1.0f),
+          ^
+
+/root/raytracedicom_updated1011/src/tests/complete_dose_debug.cu(650): error: too few arguments in function call
+      );
+      ^
+
+2 errors detected in the compilation of "/root/raytracedicom_updated1011/src/tests/complete_dose_debug.cu".
+make[2]: *** [CMakeFiles/raytracedicom_test.dir/build.make:77: CMakeFiles/raytracedicom_test.dir/src/tests/complete_dose_debug.cu.o] Error 2
+make[1]: *** [CMakeFiles/Makefile2:127: CMakeFiles/raytracedicom_test.dir/all] Error 2
+make[2]: *** [CMakeFiles/complete_dose_debug.dir/build.make:77: CMakeFiles/complete_dose_debug.dir/src/tests/complete_dose_debug.cu.o] Error 2
+make[1]: *** [CMakeFiles/Makefile2:283: CMakeFiles/complete_dose_debug.dir/all] Error 2
+/root/raytracedicom_updated1011/src/tests/dose_distribution_analysis.cu(229): error: no operator "=" matches these operands
+            operand types are: float2 = float3
+      beam.sourceDist = make_float3(0.0f, 0.0f, -100.0f);
+                      ^
+
+/root/raytracedicom_updated1011/src/tests/dose_distribution_analysis.cu(237): error: class "RTDBeamSettings" has no member "spotPositions"
+      beam.spotPositions.resize(10);
+           ^
+
+/root/raytracedicom_updated1011/src/tests/dose_distribution_analysis.cu(241): error: class "RTDBeamSettings" has no member "spotPositions"
+              beam.spotPositions[spot_idx] = make_vec3f(
+                   ^
+
+/root/raytracedicom_updated1011/src/tests/dose_distribution_analysis.cu(258): error: class "RTDEnergyStruct" has no member "nIddSamples"
+      energy.nIddSamples = 100;
+             ^
+
+/root/raytracedicom_updated1011/src/tests/dose_distribution_analysis.cu(259): error: class "RTDEnergyStruct" has no member "iddVector"
+      energy.iddVector.resize(energy.nIddSamples);
+             ^
+
+/root/raytracedicom_updated1011/src/tests/dose_distribution_analysis.cu(259): error: class "RTDEnergyStruct" has no member "nIddSamples"
+      energy.iddVector.resize(energy.nIddSamples);
+                                     ^
+
+/root/raytracedicom_updated1011/src/tests/dose_distribution_analysis.cu(260): error: class "RTDEnergyStruct" has no member "nIddSamples"
+      for (int i = 0; i < energy.nIddSamples; ++i) {
+                                 ^
+
+/root/raytracedicom_updated1011/src/tests/dose_distribution_analysis.cu(261): error: class "RTDEnergyStruct" has no member "iddVector"
+          energy.iddVector[i] = 1.0f - i * 0.01f;
+                 ^
+
+8 errors detected in the compilation of "/root/raytracedicom_updated1011/src/tests/dose_distribution_analysis.cu".
+/root/raytracedicom_updated1011/src/tests/cpb_ray_tracing_integration.cu(185): error: no suitable conversion function from "vec3f" to "int" exists
+                                  beamDirection, bmXDirection, bmYDirection,
+                                  ^
+
+/root/raytracedicom_updated1011/src/tests/cpb_ray_tracing_integration.cu(186): error: too few arguments in function call
+                                  sourcePosition, sad, refPlaneZ);
+                                                                ^
+
+2 errors detected in the compilation of "/root/raytracedicom_updated1011/src/tests/cpb_ray_tracing_integration.cu".
+make[2]: *** [CMakeFiles/dose_distribution_analysis.dir/build.make:77: CMakeFiles/dose_distribution_analysis.dir/src/tests/dose_distribution_analysis.cu.o] Error 2
+make[1]: *** [CMakeFiles/Makefile2:335: CMakeFiles/dose_distribution_analysis.dir/all] Error 2
+make[2]: *** [CMakeFiles/cpb_ray_tracing_integration.dir/build.make:77: CMakeFiles/cpb_ray_tracing_integration.dir/src/tests/cpb_ray_tracing_integration.cu.o] Error 2
+make[1]: *** [CMakeFiles/Makefile2:231: CMakeFiles/cpb_ray_tracing_integration.dir/all] Error 2
+[ 73%] Linking CUDA device code CMakeFiles/cpb_debug_test.dir/cmake_device_link.o
+[ 75%] Linking CXX executable bin/cpb_debug_test
+[ 75%] Built target cpb_debug_test
+[ 77%] Linking CUDA device code CMakeFiles/wrapper_integration_test.dir/cmake_device_link.o
+[ 80%] Linking CXX executable bin/wrapper_integration_test
+[ 80%] Built target wrapper_integration_test
+make: *** [Makefile:91: all] Error 2
